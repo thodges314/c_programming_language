@@ -6,14 +6,16 @@
 // count words and chars in input
 int main()
 {
-	int c, nw, nc, state;
+	int c, nl, nw, nc, state;
 
 	state = OUT;
-	nw = nc = 0;
-	while ((c = getchar()) != '\n')
+	nl = nw = nc = 0;
+	while ((c = getchar()) != EOF)
 	{
 		++nc;
-		if (c == ' ' || c == '\t')
+		if (c == '\n')
+			++nl;
+		else if (c == ' ' || c == '\t' || c == '\n')
 			state = OUT;
 		else if (state == OUT)
 		{
@@ -21,5 +23,5 @@ int main()
 			++nw;
 		}
 	}
-	printf("%d %d", nw, nc);
+	printf("%d %d %d\n", nl, nw, nc);
 }
