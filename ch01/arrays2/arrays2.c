@@ -32,9 +32,7 @@ int main()
 	for (i = 1; i <= maxlines; ++i)
 	{
 		for (j = 0; j <= greatest; ++j)
-		{
 			(nlength[j] >= i) ? printf("*******  ") : printf("         ");
-		}
 		printf("\n");
 	}
 }
