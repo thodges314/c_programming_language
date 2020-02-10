@@ -25,7 +25,7 @@ int main()
 }
 
 // reads a line into s, returns length
-int getlinefunc(char s[], int lim)
+int getlinefunc(char s[], int lim) // renamed from book because getline is used
 {
     int c, i;
     for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
