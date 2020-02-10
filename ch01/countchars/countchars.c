@@ -5,7 +5,7 @@ int main()
 	long nc;
 
 	nc = 0;
-	while (getchar() != 10)
+	while (getchar() != '\n')
 		++nc;
 	printf("%ld\n", nc);
 }
