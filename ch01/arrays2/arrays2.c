@@ -1,6 +1,6 @@
 #include <stdio.h>
-#define STEP 3
-#define MAX 255
+#define STEP 2
+#define MAX 99
 
 //exercise 1.13
 int main()
@@ -26,14 +26,14 @@ int main()
 	for (i = 0; i <= greatest; ++i)
 	{
 		(nlength[i] > maxlines) && (maxlines = nlength[i]);
-		printf("%3d - %3d  ", (i * STEP + 1), ((i + 1) * STEP));
+		printf("%2d - %2d  ", (i * STEP + 1), ((i + 1) * STEP));
 	}
 	printf("\n");
 	for (i = 1; i <= maxlines; ++i)
 	{
 		for (j = 0; j <= greatest; ++j)
 		{
-			(nlength[j] >= i) ? printf("*********  ") : printf("           ");
+			(nlength[j] >= i) ? printf("*******  ") : printf("         ");
 		}
 		printf("\n");
 	}
