@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int power(int m, int n); // function declared here because it's lower in the code
+int power(int m, int n); // function declared here because it's lower in the code - function prototype
 
 // test power function
 int main()
